@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://bmpluu7c3eiwx"]
+
+[ext_resource type="Script" uid="uid://buekjm65jbuaq" path="res://scripts/hud.gd" id="1_5ysmq"]
+[ext_resource type="Texture2D" uid="uid://b011k7p4r3pnl" path="res://assets/Flappy_Bird_assets by kosresetr55/UI/gameover.png" id="1_oo0fn"]
+[ext_resource type="Texture2D" uid="uid://dt0uy8k0wjudg" path="res://assets/Flappy_Bird_assets by kosresetr55/UI/message.png" id="2_5ysmq"]
+
+[node name="HUD" type="CanvasLayer" unique_id=1652364928]
+script = ExtResource("1_5ysmq")
+
+[node name="ScoreLabel" type="Label" parent="." unique_id=302942913]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -27.5
+offset_top = 18.0
+offset_right = 27.5
+offset_bottom = 63.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 32
+text = "999"
+horizontal_alignment = 1
+
+[node name="GameOver" type="TextureRect" parent="." unique_id=1966930862]
+visible = false
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -96.0
+offset_top = 29.0
+offset_right = 96.0
+offset_bottom = 71.0
+grow_horizontal = 2
+texture = ExtResource("1_oo0fn")
+
+[node name="RetryButton" type="Button" parent="GameOver" unique_id=86346899]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.0
+offset_top = 172.0
+offset_right = 65.0
+offset_bottom = 212.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "RETRY"
+
+[node name="StartMessage" type="TextureRect" parent="." unique_id=2068896166]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -92.0
+offset_top = -223.0
+offset_right = 92.0
+offset_bottom = 44.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_5ysmq")
+
+[connection signal="pressed" from="GameOver/RetryButton" to="." method="_on_retry_button_pressed"]
