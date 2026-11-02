@@ -14,9 +14,9 @@ Objective:
 - Fly through as many pipes as possible without dying.
 
 ## Setup & Installation
-Prerequisites: Godot version 4.7 or later.
-Clone the repo: https://github.com/viSerpa/flappy_bird_att_2.git
-Run the game: Press F5 to play game.
+- **Prerequisites**: Godot version 4.7 or later.
+- **Clone the repo**: https://github.com/viSerpa/flappy_bird_att_2.git
+- **Run the game**: Press F5 to play game.
 
 ## Tutorial Used
 - https://youtu.be/8mQ_kF8v5DA?si=QtkM0BtsMV5ksY4_ 
