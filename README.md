@@ -9,6 +9,7 @@ Flappy Bird Attempt 2 — Another clone of Flappy Bird built using Godot & GDScr
 ## How to Play
 Controls:
 - Space to Jump.
+
 Objective: Fly through as many pipes as possible without dying.
 
 ## Setup & Installation
